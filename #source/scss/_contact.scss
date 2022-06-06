@@ -1,0 +1,70 @@
+.contact {
+    background-color: #ffffff;
+    padding: 100px 0 50px 0;
+}
+.contact__subtitle {
+    margin: 95px 0 90px 0;
+}
+.contact__contact-form {
+    display: flex;
+    padding: 0 0 50px 0;
+    margin: 0 -15px;
+}
+.contact-form__contact-data {
+    margin: 0 15px;
+}
+.contact-data__name {
+    input {
+        width: 571px;
+        height: 31px;
+        border-bottom: solid 1px #bdbdbd;
+        margin: 0 0 30px 0;
+    }
+}
+.contact-data__email {
+    input {
+        width: 571px;
+        height: 31px;
+        border-bottom: solid 1px #bdbdbd;
+        margin: 0 0 30px 0;
+    }
+}
+.contact-data__subject {
+    input {
+        width: 571px;
+        height: 31px;
+        border-bottom: solid 1px #bdbdbd;
+    }
+}
+.contact-form__message {
+    textarea {
+        margin: 0 15px;
+        width: 571px;
+        height: 153px;
+        border-bottom: solid 1px #bdbdbd;
+    }
+}
+.contact__button {
+    text-align: center;
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 58px;
+        width: 370px;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 600;
+        background-color: #ec7979;
+        color: #ffffff;
+        transition-duration: 0.5s;
+        &:hover {
+            background-color: #ab4949;
+        }
+        &:active {
+            transition-duration: 0.3s;
+            background-color: #ec7979;
+            box-shadow: inset 0px 0px 5px black;
+        }
+    }
+}

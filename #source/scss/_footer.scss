@@ -1,0 +1,27 @@
+.footer {
+    font-family: "Raleway";
+    background-color: #000000;
+    padding: 40px 0 27px 0;
+    p {
+        font-size: 18px;
+        line-height: 21px;
+        color: #ffffff;
+        opacity: 0.5;
+        text-align: center;
+    }
+}
+.footer__list {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 32px 0;
+    a {
+        font-size: 40px;
+        color: #cccccc;
+        margin: 0 20px;
+        padding: 1px;
+        transition-duration: 0.5s;
+        &:hover {
+            color: #fff;
+        }
+    }
+}

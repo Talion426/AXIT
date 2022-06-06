@@ -1,0 +1,38 @@
+.header {
+    background-color: black;
+}
+.header-body {
+    display: flex;
+    justify-content: space-between;
+}
+.header-body__logo {
+    margin: 0 0 0 -55px;
+}
+.header-body__header-nav {
+    display: flex;
+    align-items: center;
+}
+.header-nav__list {
+    display: flex;
+    li {
+        a {
+            display: flex;
+            width: 113px;
+            height: 75px;
+            align-items: center;
+            justify-content: center;
+            line-height: 19px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+            transition-duration: 0.5s;
+            &:hover {
+                background-color: #ec7979;
+            }
+            &:active {
+                background-color: #ab4949;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.social {
+    background-color: #f8efef;
+}
+.social__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.social-descrip__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 18px 0;
+}
+.social-links {
+    display: flex;
+    align-items: center;
+    a {
+        font-size: 48px;
+        color: #cccccc;
+        padding: 3px;
+        margin: 0 22.5px;
+        transition-duration: 0.5s;
+        &:hover {
+            color: #000;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.awesome {
+    background-color: #fff;
+    padding: 100px 0 0 0;
+}
+.awesome__subtitle {
+    margin: 95px 0 110px 0;
+}
+.awesome__awesome-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 58px 0;
+    margin: 0 -15px;
+}
+.awesome-columns__awesome-column {
+    text-align: center;
+    margin: 0 15px;
+}
+.awesome-column__icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    font-size: 60px;
+    color: #ec7979;
+    margin: 0 auto;
+    border: 1px solid #ec7979;
+    border-radius: 50%;
+}
+.awesome-column__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 80px 0 27px 0;
+}
