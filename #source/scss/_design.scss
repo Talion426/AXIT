@@ -2,20 +2,20 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../../img/background_second.jpg);
     background-size: cover;
     padding: 100px 0 50px 0;
-}
-.design__title {
-    color: #fff;
-    &::after {
-        background-color: #fff;
+    &__title {
+        color: #fff;
+        &::after {
+            background-color: #fff;
+        }
     }
-}
-.design__subtitle {
-    margin: 95px 0 73px 0;
-    color: #fff;
-}
-.design__button {
-    text-align: center;
-    a {
+    &__subtitle {
+        margin: 95px 0 73px 0;
+        color: #fff;
+    }
+    &__button {
+        text-align: center;
+    }
+    &__link {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -24,6 +24,7 @@
         font-size: 18px;
         line-height: 25px;
         font-weight: 600;
+        background-color: inherit;
         border: 2px solid #ffffff;
         color: #ffffff;
         transition-duration: 0.5s;

@@ -1,59 +1,19 @@
 .contact {
     background-color: #ffffff;
     padding: 100px 0 50px 0;
-}
-.contact__subtitle {
-    margin: 95px 0 90px 0;
-}
-.contact__contact-form {
-    display: flex;
-    padding: 0 0 50px 0;
-    margin: 0 -15px;
-}
-.contact-form__contact-data {
-    margin: 0 15px;
-}
-.contact-data__name {
-    input {
-        width: 571px;
-        height: 31px;
-        border-bottom: solid 1px #bdbdbd;
-        margin: 0 0 30px 0;
+    &__subtitle {
+        margin: 95px 0 90px 0;
     }
-}
-.contact-data__email {
-    input {
-        width: 571px;
-        height: 31px;
-        border-bottom: solid 1px #bdbdbd;
-        margin: 0 0 30px 0;
+    &__button {
+        text-align: center;
     }
-}
-.contact-data__subject {
-    input {
-        width: 571px;
-        height: 31px;
-        border-bottom: solid 1px #bdbdbd;
-    }
-}
-.contact-form__message {
-    textarea {
-        margin: 0 15px;
-        width: 571px;
-        height: 153px;
-        border-bottom: solid 1px #bdbdbd;
-    }
-}
-.contact__button {
-    text-align: center;
-    a {
+    &__link {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         height: 58px;
         width: 370px;
         font-size: 18px;
-        line-height: 25px;
         font-weight: 600;
         background-color: #ec7979;
         color: #ffffff;
@@ -66,5 +26,41 @@
             background-color: #ec7979;
             box-shadow: inset 0px 0px 5px black;
         }
+    }
+}
+.contact-form {
+    display: flex;
+    padding: 0 0 50px 0;
+    margin: 0 -15px;
+    &__data {
+        margin: 0 15px;
+    }
+    &__name {
+        display: block;
+        width: 571px;
+        height: 35px;
+        border-bottom: solid 1px #bdbdbd;
+        margin: 0 0 50px 0;
+    }
+    &__email {
+        display: block;
+        width: 571px;
+        height: 35px;
+        border-bottom: solid 1px #bdbdbd;
+        margin: 0 0 50px 0;
+    }
+    &__subject {
+        display: block;
+        width: 571px;
+        height: 35px;
+        border-bottom: solid 1px #bdbdbd;
+    }
+    &__message {
+        display: block;
+        margin: 0 15px;
+        width: 571px;
+        height: 205px;
+        border-bottom: solid 1px #bdbdbd;
+        resize: none;
     }
 }

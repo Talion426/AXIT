@@ -5,15 +5,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 
 body {
-    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
     font-family: "Open Sans";
     list-style-type: none;
-}
-.wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
 }
 .container {
     max-width: 1200px;
@@ -21,7 +16,7 @@ body {
     margin: 0 auto;
 }
 .main {
-    flex: 1 1 auto;
+    flex: 1 0 auto;
 }
 .text {
     font-family: Raleway;
@@ -40,7 +35,7 @@ body {
         position: absolute;
         height: 1px;
         width: 170px;
-        background-color: #000000;
+        background-color: #ec7979;
         bottom: -55px;
         left: calc(50% - 85px);
     }
