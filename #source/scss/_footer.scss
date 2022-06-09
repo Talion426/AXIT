@@ -19,7 +19,7 @@
         color: #cccccc;
         margin: 0 20px;
         padding: 1px;
-        transition-duration: 0.5s;
+        transition: all 0.3s ease-in-out;
         &:hover {
             color: #fff;
         }

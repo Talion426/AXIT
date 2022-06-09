@@ -24,7 +24,7 @@
         color: #cccccc;
         padding: 3px;
         margin: 0 22.5px;
-        transition-duration: 0.5s;
+        transition: all 0.3s ease-in-out;
         &:hover {
             color: #000;
         }

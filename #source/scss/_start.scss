@@ -1,11 +1,12 @@
 .start {
     background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../img/background_first.jpg);
     background-size: cover;
+    height: 100vh;
 }
 .start-body {
     display: flex;
     justify-content: space-between;
-    padding: 208px 0 185px 0;
+    padding: 20vh 0;
     font-family: Raleway, sans-serif;
     color: white;
     margin: 0 -15px;
@@ -50,13 +51,12 @@
         font-weight: 600;
         border: 2px solid #ffffff;
         color: #ffffff;
-        transition-duration: 0.5s;
+        transition: all 0.3s ease-in-out;
         &:hover {
             border: 2px solid #ec7979;
             color: #ec7979;
         }
         &:active {
-            transition-duration: 0.3s;
             background-color: #ab4949;
             border: 2px solid #ab4949;
             color: #ffffff;
@@ -122,7 +122,7 @@
         color: #ffffff;
         padding: 25px 0;
         border-radius: 0px 0px 10px 10px;
-        transition-duration: 0.5s;
+        transition: all 0.3s ease-in-out;
         &:hover {
             background-color: #ab4949;
         }

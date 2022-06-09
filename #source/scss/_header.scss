@@ -29,13 +29,12 @@
         font-size: 14px;
         font-weight: 600;
         color: #ffffff;
-        transition-duration: 0.5s;
+        transition: all 0.3s ease-in-out;
         &:hover {
             background-color: #ec7979;
         }
         &:active {
             background-color: #ab4949;
-            transition-duration: 0.2s;
         }
     }
 }

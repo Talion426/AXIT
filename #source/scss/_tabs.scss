@@ -74,12 +74,11 @@
         font-weight: 600;
         background-color: #ec7979;
         color: #ffffff;
-        transition-duration: 0.5s;
+        transition: all 0.3s ease-in-out;
         &:hover {
             background-color: #ab4949;
         }
         &:active {
-            transition-duration: 0.3s;
             background-color: #ec7979;
             box-shadow: inset 0px 0px 5px black;
         }

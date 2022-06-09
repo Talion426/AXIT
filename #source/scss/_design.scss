@@ -27,13 +27,12 @@
         background-color: inherit;
         border: 2px solid #ffffff;
         color: #ffffff;
-        transition-duration: 0.5s;
+        transition: all 0.3s ease-in-out;
         &:hover {
             border: 2px solid #ec7979;
             color: #ec7979;
         }
         &:active {
-            transition-duration: 0.3s;
             background-color: #ab4949;
             border: 2px solid #ab4949;
             color: #ffffff;
