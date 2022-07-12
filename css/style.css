@@ -747,21 +747,20 @@ body {
     margin: 50px 0 0 0;
   }
 }
-.tabs__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.tabs input[type=radio] {
+  display: none;
 }
-.tabs__item {
+.tabs label {
+  cursor: pointer;
   position: relative;
   top: 1px;
   left: 0;
   font-size: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 13px 0;
   width: 200px;
-  height: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -773,14 +772,19 @@ body {
   z-index: 5;
 }
 @media (max-width: 1200px) {
-  .tabs__item {
+  .tabs label {
     width: 170px;
   }
 }
 @media (max-width: 992px) {
-  .tabs__item {
-    width: 33.333%;
+  .tabs label {
+    width: calc(33.333% - 2.5px);
   }
+}
+.tabs input[type=radio]:checked + label {
+  border: 1px solid #c6cbcd;
+  border-bottom: 2px solid #fff;
+  border-radius: 5px 5px 0 0;
 }
 .tabs__block {
   display: none;
@@ -796,60 +800,6 @@ body {
 @media (max-width: 992px) {
   .tabs__block {
     max-height: 431px;
-  }
-}
-.tabs__block:target {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.tabs__block::before {
-  content: "";
-  height: 40px;
-  width: 200px;
-  position: absolute;
-  top: -40px;
-  border: 1px solid #c6cbcd;
-  border-bottom: 1px solid #fff;
-  border-radius: 5px 5px 0 0;
-}
-@media (max-width: 1200px) {
-  .tabs__block::before {
-    width: 170px;
-  }
-}
-@media (max-width: 992px) {
-  .tabs__block::before {
-    width: 33.333%;
-  }
-}
-.tabs__block:nth-child(1)::before {
-  left: -1px;
-}
-.tabs__block:nth-child(2)::before {
-  left: 200px;
-}
-@media (max-width: 1200px) {
-  .tabs__block:nth-child(2)::before {
-    left: 170px;
-  }
-}
-@media (max-width: 992px) {
-  .tabs__block:nth-child(2)::before {
-    left: 33.333%;
-  }
-}
-.tabs__block:nth-child(3)::before {
-  left: 400px;
-}
-@media (max-width: 1200px) {
-  .tabs__block:nth-child(3)::before {
-    left: 340px;
-  }
-}
-@media (max-width: 992px) {
-  .tabs__block:nth-child(3)::before {
-    left: 66.666%;
   }
 }
 .tabs__descrip {
@@ -982,6 +932,14 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#tab-btn-1:checked ~ .tabs__block-1,
+#tab-btn-2:checked ~ .tabs__block-2,
+#tab-btn-3:checked ~ .tabs__block-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .awesome {
