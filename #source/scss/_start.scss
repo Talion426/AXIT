@@ -1,25 +1,40 @@
 .start {
     background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../../img/background_first.jpg);
     background-size: cover;
-    height: 100vh;
+    background-position: center;
 }
+
 .start-body {
     display: flex;
     justify-content: space-between;
-    padding: 20vh 0;
+    padding: 230px 0 180px 0;
     font-family: Raleway, sans-serif;
     color: white;
-    margin: 0 -15px;
+    gap: 30px;
+    @media (max-width: 1200px) {
+        padding: 230px 0 106px 0;
+    }
+    @media (max-width: 992px) {
+        padding: 140px 0 50px 0;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .start-descrip {
-    margin: 0 15px;
     &__logo {
         margin: 22.5px 0 72.5px 0;
+        @media (max-width: 1200px) {
+            margin: 17.5px 0 55px 0;
+        }
+        @media (max-width: 992px) {
+            display: none;
+        }
     }
     &__title {
         font-family: Raleway, sans-serif;
         font-size: 48px;
         line-height: 56px;
+        font-weight: 500;
         max-width: 640px;
         margin: 0 0 100px 0;
         position: relative;
@@ -32,6 +47,25 @@
             bottom: -55px;
             left: 0;
         }
+        @media (max-width: 1200px) {
+            font-size: 36px;
+            line-height: 42px;
+            max-width: 460px;
+            margin: 0 0 72px 0;
+            &::after {
+                width: 115px;
+                bottom: -41px;
+            }
+        }
+        @media (max-width: 992px) {
+            text-align: center;
+            margin: 0 0 85px 0;
+            &::after {
+                width: 134px;
+                bottom: -43px;
+                left: calc(50% - 67px);
+            }
+        }
     }
     &__text {
         font-family: Raleway, sans-serif;
@@ -39,10 +73,21 @@
         line-height: 21px;
         max-width: 330px;
         margin: 0 0 42px 0;
+        @media (max-width: 1200px) {
+            font-size: 14px;
+            line-height: 16px;
+            max-width: 185px;
+            margin: 0 0 31px 0;
+        }
+        @media (max-width: 992px) {
+            max-width: none;
+            margin: 0 0 42px 0;
+            text-align: center;
+        }
     }
     &__link {
         background-color: inherit;
-        display: inline-flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         height: 58px;
@@ -61,6 +106,15 @@
             border: 2px solid #ab4949;
             color: #ffffff;
         }
+        @media (max-width: 1200px) {
+            height: 50px;
+            width: 183px;
+        }
+        @media (max-width: 992px) {
+            height: 50px;
+            width: 288px;
+            margin: 0 auto 56px auto;
+        }
     }
 }
 .start-data {
@@ -71,8 +125,14 @@
     border-radius: 10px;
     height: 450px;
     width: 470px;
-    min-width: 400px;
-    margin: 0 15px;
+    @media (max-width: 1200px) {
+        width: 400px;
+    }
+    @media (max-width: 767px) {
+        width: calc(55%);
+        min-width: 288px;
+        height: 381px;
+    }
     &__title {
         display: flex;
         align-items: center;
@@ -86,6 +146,16 @@
         span {
             color: #ec7979;
         }
+        @media (max-width: 1200px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        @media (max-width: 992px) {
+        }
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 19px;
+        }
     }
     &__body {
         flex: 1 1 auto;
@@ -94,11 +164,20 @@
         border-bottom: 1px solid #bdbdbd;
         width: calc(100% - 100px);
         height: 38px;
+        @media (max-width: 992px) {
+            width: calc(100% - 80px);
+        }
+        @media (max-width: 767px) {
+            width: calc(100% - 40px);
+        }
     }
     &__text {
         display: flex;
         justify-content: center;
         margin: 45px 0 0 0;
+        @media (max-width: 767px) {
+            margin: 0;
+        }
     }
     &__email {
         display: flex;

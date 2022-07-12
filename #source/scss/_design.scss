@@ -1,13 +1,16 @@
 .design {
     background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../img/background_second.jpg);
     background-size: cover;
+    background-position: center;
     padding: 100px 0 50px 0;
+    justify-content: center;
     &__title {
         color: #fff;
         &::after {
             background-color: #fff;
         }
     }
+    
     &__subtitle {
         margin: 95px 0 73px 0;
         color: #fff;
@@ -22,7 +25,6 @@
         height: 58px;
         width: 370px;
         font-size: 18px;
-        line-height: 25px;
         font-weight: 600;
         background-color: inherit;
         border: 2px solid #ffffff;
@@ -36,6 +38,13 @@
             background-color: #ab4949;
             border: 2px solid #ab4949;
             color: #ffffff;
+        }
+        @media (max-width: 1200px) {
+            width: 318px;
+        }
+        @media (max-width: 767px) {
+            width: 273px;
+            height: 50px;
         }
     }
 }

@@ -1,12 +1,13 @@
-const anchors = document.querySelectorAll('a[href*="#"]')
+const swiper = new Swiper(".swiper", {
+    speed: 600,
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
+    slideToClickedSlide: true,
+    spaceBetween: 30,
 
-for (let anchor of anchors) {
-    anchor.addEventListener("click", function (event) {
-        event.preventDefault();
-        const blockID = anchor.getAttribute('href')
-        document.querySelector('' + blockID).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        })
-    })
-}
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

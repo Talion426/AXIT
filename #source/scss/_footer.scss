@@ -8,7 +8,12 @@
         color: #ffffff;
         opacity: 0.5;
         text-align: center;
+        @media (max-width: 1200px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
+    
     &__list {
         display: flex;
         justify-content: center;
@@ -22,6 +27,14 @@
         transition: all 0.3s ease-in-out;
         &:hover {
             color: #fff;
+        }
+        @media (max-width: 1200px) {
+            font-size: 34px;
+            margin: 0 17px;
+        }
+        @media (max-width: 767px) {
+            font-size: 20px;
+            margin: 0 12px;
         }
     }
 }

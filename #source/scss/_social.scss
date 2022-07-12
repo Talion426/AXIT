@@ -5,7 +5,13 @@
     display: flex;
     justify-content: space-between;
     padding: 18px 0;
+    @media (max-width: 992px) {
+        display: block;
+        justify-content: center;
+        padding: 45px 0;
+    }
 }
+
 .social-descrip {
     &__title {
         font-weight: 700;
@@ -14,11 +20,30 @@
         display: flex;
         align-items: center;
         margin: 0 0 18px 0;
+        @media (max-width: 1200px) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        @media (max-width: 992px) {
+            justify-content: center;
+        }
+        @media (max-width: 767px) {
+            margin: 0 0 30px 0;
+        }
+    }
+    &__text {
+        @media (max-width: 992px) {
+            text-align: center;
+            margin: 0 0 35px 0;
+        }
     }
 }
 .social-links {
     display: flex;
     align-items: center;
+    @media (max-width: 992px) {
+        justify-content: center;
+    }
     &__link {
         font-size: 48px;
         color: #cccccc;
@@ -27,6 +52,14 @@
         transition: all 0.3s ease-in-out;
         &:hover {
             color: #000;
+        }
+        @media (max-width: 1200px) {
+            font-size: 42px;
+            margin: 0 18px;
+        }
+        @media (max-width: 767px) {
+            font-size: 18px;
+            margin: 0 12px;
         }
     }
 }

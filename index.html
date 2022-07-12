@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/style.css" />
         <title>AXIT</title>
     </head>
@@ -21,11 +22,14 @@
                     <nav class="header-nav">
                         <ul class="header-nav__list">
                             <li class="header-nav__item"><a class="header-nav__link" href="#features">Features</a></li>
-                            <li class="header-nav__item"><a class="header-nav__link" href="#about">About</a></li>
+                            <li class="header-nav__item"><a class="header-nav__link" href="#about">About us</a></li>
                             <li class="header-nav__item"><a class="header-nav__link" href="#pricing">Pricing</a></li>
                             <li class="header-nav__item"><a class="header-nav__link" href="#reviews">Reviews</a></li>
                             <li class="header-nav__item"><a class="header-nav__link" href="#contact">Contact</a></li>
                         </ul>
+                        <button class="header-nav__burger-btn">
+                            <img src="img/burger.png" alt="" class="header-nav__burger-img" />
+                        </button>
                     </nav>
                 </div>
             </div>
@@ -119,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div id="features" class="tabs">
+            <div class="tabs">
                 <div class="container">
                     <nav class="tabs__items">
                         <a href="#tab_01" class="tabs__item">TAB 1</a>
@@ -145,7 +149,7 @@
                                 </div>
                             </div>
                             <div class="tabs__image">
-                                <img src="img/Statue.jpg" alt="Statue" />
+                                <img class="tabs__img" src="img/Statue.jpg" alt="Statue" />
                             </div>
                         </div>
                         <div id="tab_02" class="tabs__block">
@@ -166,7 +170,7 @@
                                 </div>
                             </div>
                             <div class="tabs__image">
-                                <img src="img/Statue.jpg" alt="Statue" />
+                                <img class="tabs__img" src="img/Statue.jpg" alt="Statue" />
                             </div>
                         </div>
                         <div id="tab_03" class="tabs__block">
@@ -187,13 +191,13 @@
                                 </div>
                             </div>
                             <div class="tabs__image">
-                                <img src="img/Statue.jpg" alt="Statue" />
+                                <img class="tabs__img" src="img/Statue.jpg" alt="Statue" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="about" class="awesome">
+            <div class="awesome">
                 <div class="container">
                     <h2 class="awesome__title title">WHY THIS IS AWESOME</h2>
                     <p class="awesome__subtitle text subtitle">
@@ -242,7 +246,7 @@
                     </div>
                 </div>
             </div>
-            <div id="pricing" class="price">
+            <div class="price">
                 <div class="container">
                     <h2 class="price__title title">PRICING OPTIONS</h2>
                     <p class="price__subtitle text subtitle">
@@ -291,7 +295,7 @@
                     </div>
                 </div>
             </div>
-            <div id="reviews" class="saying">
+            <div class="saying">
                 <div class="container">
                     <h2 class="saying__title title">WHAT OUR CUSTOMERS ARE SAYING</h2>
                     <p class="saying__subtitle text subtitle">
@@ -345,6 +349,62 @@
                         </div>
                     </div>
                 </div>
+                <div class="saying__slider swiper">
+                    <div class="saying__slider-wrapper swiper-wrapper">
+                        <div class="saying__slider-slide swiper-slide">
+                            <div class="saying-column">
+                                <p class="saying-column__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus
+                                    expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                                </p>
+                                <div class="saying-column__star">
+                                    <div class="saying-column__avatar">
+                                        <img class="saying-column__img" src="img/Davis.png" alt="Davis Rhiel Madsen" />
+                                    </div>
+                                    <div class="saying-column__data">
+                                        <p class="saying-column__name">Davis Rhiel Madsen</p>
+                                        <p class="saying-column__profession">Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="saying__slider-slide swiper-slide">
+                            <div class="saying-column">
+                                <p class="saying-column__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus
+                                    expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                                </p>
+                                <div class="saying-column__star">
+                                    <div class="saying-column__avatar">
+                                        <img class="saying-column__img" src="img/Jaydon.png" alt="Jaydon Rosser" />
+                                    </div>
+                                    <div class="saying-column__data">
+                                        <p class="saying-column__name">Jaydon Rosser</p>
+                                        <p class="saying-column__profession">Programmer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="saying__slider-slide swiper-slide">
+                            <div class="saying-column">
+                                <p class="saying-column__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus
+                                    expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.
+                                </p>
+                                <div class="saying-column__star">
+                                    <div class="saying-column__avatar">
+                                        <img class="saying-column__img" src="img/Cooper.png" alt="Cooper Dorwart" />
+                                    </div>
+                                    <div class="saying-column__data">
+                                        <p class="saying-column__name">Cooper Dorwart</p>
+                                        <p class="saying-column__profession">Photographer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
             <div class="design">
                 <div class="container">
@@ -358,7 +418,7 @@
                     </div>
                 </div>
             </div>
-            <div id="contact" class="contact">
+            <div class="contact">
                 <div class="container">
                     <h2 class="contact__title title">CONTACT US</h2>
                     <p class="contact__subtitle text subtitle">
@@ -366,13 +426,32 @@
                     </p>
                     <form id="contactForm" action="" class="contact-form">
                         <div class="contact-form__data">
-                            <input class="contact-form__name" tabindex="1" placeholder="Name" type="text" />
+                            <input
+                                class="contact-form__name contact-form__elem"
+                                tabindex="1"
+                                placeholder="Name"
+                                type="text"
+                            />
 
-                            <input class="contact-form__email" tabindex="2" placeholder="Email" type="email" />
+                            <input
+                                class="contact-form__email contact-form__elem"
+                                tabindex="2"
+                                placeholder="Email"
+                                type="email"
+                            />
 
-                            <input class="contact-form__subject" tabindex="3" placeholder="Password" type="password" />
+                            <input
+                                class="contact-form__subject contact-form__elem"
+                                tabindex="3"
+                                placeholder="Password"
+                                type="password"
+                            />
                         </div>
-                        <textarea class="contact-form__message" tabindex="4" placeholder="Message"></textarea>
+                        <textarea
+                            class="contact-form__message contact-form__elem"
+                            tabindex="4"
+                            placeholder="Message"
+                        ></textarea>
                     </form>
                     <div class="contact__button">
                         <button form="contactForm" class="contact__link">Send Message</button>
@@ -423,5 +502,7 @@
             </div>
         </footer>
         <script src="https://kit.fontawesome.com/c6a31e549f.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

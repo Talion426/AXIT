@@ -8,12 +8,19 @@ body {
     display: flex;
     flex-flow: column nowrap;
     font-family: "Open Sans";
-    list-style-type: none;
 }
 .container {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+    @media (max-width: 1200px) {
+        max-width: 1024px;
+        padding: 0 16px;
+    }
+    @media (max-width: 767px) {
+        max-width: none;
+        padding: 0 16px;
+    }
 }
 .main {
     flex: 1 0 auto;
@@ -22,6 +29,14 @@ body {
     font-family: Raleway;
     font-size: 18px;
     line-height: 21px;
+    @media (max-width: 1200px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    @media (max-width: 767px) {
+        font-size: 13px;
+        line-height: 15px;
+    }
 }
 .title {
     font-family: Raleway;
@@ -38,6 +53,22 @@ body {
         background-color: #ec7979;
         bottom: -55px;
         left: calc(50% - 85px);
+    }
+    @media (max-width: 1200px) {
+        font-size: 24px;
+        line-height: 28px;
+        &::after {
+            width: 142px;
+            left: calc(50% - 71px);
+        }
+    }
+    @media (max-width: 767px) {
+        font-size: 18px;
+        line-height: 21px;
+        &::after {
+            width: 134px;
+            left: calc(50% - 66px);
+        }
     }
 }
 .subtitle {

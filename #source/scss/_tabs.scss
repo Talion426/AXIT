@@ -1,5 +1,12 @@
 .tabs {
     margin: 100px 0 0 0;
+    @media (max-width: 1200px) {
+        margin: 60px 0 0 0;
+    }
+
+    @media (max-width: 767px) {
+        margin: 50px 0 0 0;
+    }
     &__items {
         display: flex;
     }
@@ -16,12 +23,24 @@
         text-transform: uppercase;
         color: #333333;
         z-index: 1;
+        @media (max-width: 1200px) {
+            width: 170px;
+        }
+        @media (max-width: 992px) {
+            width: 33.333%;
+        }
     }
     &__block {
         display: none;
         border: 1px solid #c6cbcd;
-        max-height: 500px;
         position: relative;
+        max-height: 501px;
+        @media (max-width: 1200px) {
+            max-height: 386px;
+        }
+        @media (max-width: 992px) {
+            max-height: 431px;
+        }
         &:target {
             display: flex;
         }
@@ -34,26 +53,65 @@
             border: 1px solid #c6cbcd;
             border-bottom: 1px solid #fff;
             border-radius: 5px 5px 0 0;
+            @media (max-width: 1200px) {
+                width: 170px;
+            }
+            @media (max-width: 992px) {
+                width: 33.333%;
+            }
         }
         &:nth-child(1)::before {
             left: -1px;
         }
         &:nth-child(2)::before {
             left: 200px;
+            @media (max-width: 1200px) {
+                left: 170px;
+            }
+            @media (max-width: 992px) {
+                left: 33.333%;
+            }
         }
         &:nth-child(3)::before {
             left: 400px;
+            @media (max-width: 1200px) {
+                left: 340px;
+            }
+            @media (max-width: 992px) {
+                left: 66.666%;
+            }
         }
     }
     &__descrip {
-        max-width: 60%;
-        padding: 40px 30px 0 100px;
+        max-width: 700px;
+        padding: 40px 30px 50px 100px;
+        @media (max-width: 1200px) {
+            max-width: 600px;
+            padding: 40px 25px 50px 85px;
+        }
+        @media (max-width: 992px) {
+            max-width: none;
+            text-align: center;
+            padding: 40px 50px 30px;
+        }
+        @media (max-width: 767px) {
+            padding: 40px 12px 30px;
+        }
     }
     &__title {
         font-weight: 700;
         font-size: 30px;
         line-height: 41px;
         margin: 0 0 65px 0;
+        @media (max-width: 1200px) {
+            font-size: 24px;
+            line-height: 33px;
+        }
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 25px;
+            margin: 0 0 50px 0;
+        }
     }
     &__text {
         font-family: Raleway;
@@ -62,6 +120,34 @@
         margin: 0 0 27px 0;
         p:nth-child(3) {
             margin: 0 0 27px 0;
+        }
+        @media (max-width: 1200px) {
+            font-size: 14px;
+            line-height: 16px;
+            p:nth-child(1) {
+                display: inline;
+            }
+            p:nth-child(2) {
+                display: inline;
+            }
+            p:nth-child(3) {
+                display: inline;
+            }
+            p:nth-child(3)::after {
+                content: "";
+                display: block;
+                margin: 0 0 20px 0;
+            }
+            p:nth-child(4) {
+                display: inline;
+            }
+            p:nth-child(5) {
+                display: inline;
+            }
+        }
+        @media (max-width: 767px) {
+            font-size: 13px;
+            line-height: 15px;
         }
     }
     &__link {
@@ -82,5 +168,22 @@
             background-color: #ec7979;
             box-shadow: inset 0px 0px 5px black;
         }
+        @media (max-width: 1200px) {
+            width: 230px;
+        }
+        @media (max-width: 992px) {
+            height: 50px;
+            width: 245px;
+        }
+    }
+    &__image {
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }

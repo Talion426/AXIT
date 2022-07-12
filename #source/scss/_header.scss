@@ -7,11 +7,12 @@
 .header-body {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 .header-logo {
     &__logo-link {
         display: block;
-        margin: 22.155px 0;
     }
 }
 .header-nav {
@@ -35,6 +36,17 @@
         }
         &:active {
             background-color: #ab4949;
+        }
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+    .header-nav__burger-btn {
+        background-color: #000;
+        display: none;
+        padding: 19px;
+        @media (max-width: 992px) {
+            display: block;
         }
     }
 }
