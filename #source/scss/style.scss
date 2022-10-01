@@ -8,6 +8,9 @@ body {
     display: flex;
     flex-flow: column nowrap;
     font-family: "Open Sans";
+    &._fixed {
+        overflow: hidden;
+    }
 }
 .container {
     max-width: 1200px;
@@ -86,3 +89,4 @@ body {
 @import "_saying.scss";
 @import "_design.scss";
 @import "_contact.scss";
+@import "_burgerMenu.scss";

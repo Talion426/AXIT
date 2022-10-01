@@ -1,10 +1,10 @@
 .tabs {
-    margin: 100px 0 0 0;
+    margin: 100px 0 600px 0;
     @media (max-width: 1200px) {
-        margin: 60px 0 0 0;
+        margin: 60px 0 450px 0;
     }
     @media (max-width: 767px) {
-        margin: 50px 0 0 0;
+        margin: 50px 0 400px 0;
     }
     input[type="radio"] {
         display: none;
@@ -35,10 +35,19 @@
         border-bottom: 2px solid #fff;
         border-radius: 5px 5px 0 0;
     }
-    &__block {
-        display: none;
-        border: 1px solid #c6cbcd;
+    &__body {
         position: relative;
+    }
+    &__block {
+        display: flex;
+        position: absolute;
+        top: 42px;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.5s ease-in-out;
+        border: 1px solid #c6cbcd;
         max-height: 501px;
         @media (max-width: 1200px) {
             max-height: 386px;
@@ -155,5 +164,7 @@
 #tab-btn-1:checked ~ .tabs__block-1,
 #tab-btn-2:checked ~ .tabs__block-2,
 #tab-btn-3:checked ~ .tabs__block-3 {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
 }

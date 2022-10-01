@@ -21,11 +21,21 @@
                     </div>
                     <nav class="header-nav">
                         <ul class="header-nav__list">
-                            <li class="header-nav__item"><a class="header-nav__link" href="#features">Features</a></li>
-                            <li class="header-nav__item"><a class="header-nav__link" href="#about">About us</a></li>
-                            <li class="header-nav__item"><a class="header-nav__link" href="#pricing">Pricing</a></li>
-                            <li class="header-nav__item"><a class="header-nav__link" href="#reviews">Reviews</a></li>
-                            <li class="header-nav__item"><a class="header-nav__link" href="#contact">Contact</a></li>
+                            <li class="header-nav__item">
+                                <a data-goto=".social" class="header-nav__link" href="#features">Features</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a data-goto=".awesome" class="header-nav__link" href="#about">About us</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a data-goto=".price" class="header-nav__link" href="#pricing">Pricing</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a data-goto=".saying" class="header-nav__link" href="#reviews">Reviews</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a data-goto=".contact" class="header-nav__link" href="#contact">Contact</a>
+                            </li>
                         </ul>
                         <button class="header-nav__burger-btn">
                             <img src="img/burger.png" alt="" class="header-nav__burger-img" />
@@ -155,10 +165,10 @@
                         </div>
                         <div class="tabs__block tabs__block-2">
                             <div class="tabs__descrip">
-                                <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
+                                <h3 class="tabs__title">Tft transitioning effect.</h3>
                                 <div class="tabs__text">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod2</p>
-                                    <p>bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra2</p>
+                                    <p>bibendum laoreet. Pret viverra2</p>
                                     <p>
                                         justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et
                                         magnis dis parturient montes.2
@@ -176,9 +186,9 @@
                         </div>
                         <div class="tabs__block tabs__block-3">
                             <div class="tabs__descrip">
-                                <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
+                                <h3 class="tabs__title">Tabs dfsd dfsdf trfioning fdect.</h3>
                                 <div class="tabs__text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod3</p>
+                                    <p>Lorem ipsflor sit amet, consectetur adipiscing elit. Afgdean fod3</p>
                                     <p>bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra3</p>
                                     <p>
                                         justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et
@@ -428,6 +438,7 @@
                     <form id="contactForm" action="" class="contact-form">
                         <div class="contact-form__data">
                             <input
+                                required
                                 class="contact-form__name contact-form__elem"
                                 tabindex="1"
                                 placeholder="Name"
@@ -435,6 +446,7 @@
                             />
 
                             <input
+                                required
                                 class="contact-form__email contact-form__elem"
                                 tabindex="2"
                                 placeholder="Email"
@@ -442,6 +454,7 @@
                             />
 
                             <input
+                                required
                                 class="contact-form__subject contact-form__elem"
                                 tabindex="3"
                                 placeholder="Password"
@@ -449,6 +462,7 @@
                             />
                         </div>
                         <textarea
+                            required
                             class="contact-form__message contact-form__elem"
                             tabindex="4"
                             placeholder="Message"
@@ -502,6 +516,25 @@
                 <p class="footer__text">&#169; 2015 Axure Themes</p>
             </div>
         </footer>
+        <div class="burger-menu">
+            <ul class="burger-menu__list">
+                <li class="burger-menu__item">
+                    <a data-goto=".social" class="burger-menu__link" href="#features">Features</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a data-goto=".awesome" class="burger-menu__link" href="#about">About us</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a data-goto=".price" class="burger-menu__link" href="#pricing">Pricing</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a data-goto=".saying" class="burger-menu__link" href="#reviews">Reviews</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a data-goto=".contact" class="burger-menu__link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
         <script src="https://kit.fontawesome.com/c6a31e549f.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/main.js"></script>
